@@ -1,9 +1,9 @@
-# Cooperative Group: race condition reported in `reduce()`
+# Race condition reported in `cg::reduce()`
 This is a minimum reproducible test case that causes the `compute-sanitizer`
-to report a race condition when using the cooperative groups `reduce()` method.
+to report a race condition when using the cooperative groups `cg::reduce()` method.
 
 ## Test Environment
-- GPU: RTX 5000
+- GPU: Quadro RTX 5000
 - CUDA Compiler: nvcc V12.2.140
 - Host Compiler: GCC 10 (via `devtoolset-10`)
 - Operating System: RHEL7
