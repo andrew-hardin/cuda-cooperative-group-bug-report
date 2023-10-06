@@ -1,0 +1,5 @@
+project(bug LANGUAGES CXX CUDA)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CUDA_ARCHITECTURES 75)
+add_executable(demo main.cu)
+target_compile_options(demo PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:--expt-relaxed-constexpr>)
