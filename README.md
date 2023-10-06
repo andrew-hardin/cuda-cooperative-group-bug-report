@@ -12,7 +12,7 @@ to report a race condition when using the cooperative groups `cg::reduce()` meth
 ```bash
 # Build it.
 mkdir build && cd build
-cmake ..
+cmake .. && make
 
 # Run the executable under the racecheck tool.
 compute-sanitizer --tool=racecheck ./demo
